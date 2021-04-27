@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div class="outerDiv">
+      <h1>COVID TRACKER</h1>
+      <button id="button">Press to Start</button>
+      <div id="main">
+        <select id="states" onchange="getValue()">
+          <option value="">select</option>
+        </select>
+
+        <select id="districts" onchange="getCounts()">
+          <option value="">select</option>
+        </select>
+      </div>
+      <div id="counts"></div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js2.js"></script>
+  <script src="js.js"></script>
+</html>
